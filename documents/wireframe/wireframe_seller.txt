@@ -1,0 +1,107 @@
+Lambang yang digunakan:
+<> = pesan bagi developer / logika sistem
+[] = action/button/column
+
+ROLE PENYEDIA JASA (MAHASISWA SELLER)
+
+1. Halaman Dashboard Utama (Seller Home)
+- Navigasi Atas:
+  [Photo profil penyedia]
+  Halo, <Nama Penyedia Jasa>
+  Mode Penyedia Jasa <Tombol Ganti ke Mode User biasa>
+
+- Ringkasan Performa Konten:
+  <Menampilkan total pendapatan bulan ini>
+  <Menampilkan jumlah pesanan aktif>
+  <Menampilkan rating rata-rata toko>
+
+- Tombol Aksi Utama:
+  [+ TAMBAH JASA BARU] -> <Redirect ke Halaman Buat Jasa Baru>
+
+- Bottom Navigation Bar (Khusus Mode Seller):
+  [DASHBOARD | PESANAN MASUK | CHAT SELLER | DOMPET | AKUN SELLER]
+
+
+2. Halaman Buat / Edit Jasa Baru
+- Nama Jasa:
+  [Kolom input nama layanan/jasa yang ditawarkan]
+
+- Kategori Jasa:
+  [Dropdown pilihan: Desain, Web Dev, Tugas Kuliah, Penerjemah, dll.]
+
+- Deskripsi Lengkap Jasa:
+  [Kolom input teks besar untuk menjelaskan detail jasa Anda]
+
+- Portofolio Pendukung:
+  [Upload file PDF] atau [Kolom input link website portofolio]
+
+- Pengaturan Harga & Paket:
+  Harga Jasa: [Kolom input nominal angka Rp.]
+
+- Foto/Banner Layanan:
+  [Upload gambar Banner Jasa] (png, jpg)
+
+- Aksi Akhir:
+  [BATAL]  [PUBLIKASIKAN JASA]
+
+
+3. Halaman Pesanan Masuk (Order Management)
+- Tab Status Pesanan:
+  [PERLU DITINJAU] | [SEDANG DIKERJAKAN] | [REVISI] | [SELESAI]
+
+- A. Pada Tab [PERLU DITINJAU]:
+  <Menampilkan daftar request order dari user yang belum di-acc>
+  Card Request: (Nama user, Deskripsi kebutuhan user, Estimasi deadline, File lampiran user)
+  Tombol Aksi:
+  [TOLAK PESANAN] -> <Notifikasi ke user bahwa pesanan ditolak>
+  [TERIMA PESANAN] -> <Mengubah status menjadi "menunggu pembayaran user" & mengaktifkan halaman pembayaran di sisi user>
+
+- B. Pada Tab [SEDANG DIKERJAKAN]:
+  <Menampilkan pesanan yang sudah dibayar oleh user dan harus dikerjakan>
+  Detail Kerja: (Order ID, Deadline, Bukti bayar user yang sudah di-validasi)
+  
+  [Chat dengan Pembeli] -> <Redirect ke halaman chat>
+  
+  Form Pengiriman Hasil:
+  [Upload File Hasil Pekerjaan] atau [Kolom Teks Tautan/Link Hasil Kerja]
+  [KIRIM HASIL PEKERJAAN] -> <Mengubah status di status bar user menjadi "Pesanan Selesai">
+
+- C. Pada Tab [REVISI]:
+  <Menampilkan pesanan yang dikomplain atau minta diperbaiki oleh user>
+  Catatan Revisi: <Dapat dilihat langsung melalui riwayat chat pembeli>
+  [Upload File Hasil Revisi Baru]
+  [KIRIM REVISI TERBARU] -> <Status kembali dikirim ke user untuk di-review ulang>
+
+
+4. Halaman Dompet Penyedia Jasa (Wallet / Penghasilan)
+- Saldo Aktif:
+  <Menampilkan total uang dari pesanan yang sudah diselesaikan dan di-acc user>
+
+- Penarikan Dana (Withdrawal):
+  [Pilih Bank / E-Wallet]
+  [Nomor Rekening / No. HP]
+  [Nominal Penarikan Rp.]
+  [TARIK SALDO] -> <Proses transfer ke akun bank mahasiswa penyedia jasa>
+
+- Riwayat Pendapatan:
+  <Daftar transaksi masuk dari Order ID yang sukses beserta potongannya jika ada>
+
+
+5. Halaman Chat Seller
+- [Search bar untuk mencari nama pembeli]
+- List Chat Box:
+  <Menampilkan chat dari user yang bertanya tentang jasa atau mengajukan komplain revisi>
+  Format Chat: [(Photo Profile User) <Nama User> - Pesanan: <Nama Jasa>]
+
+
+6. Halaman AKUN SELLER
+- Header Atas:
+  (PHOTO PROFIL SELLER) <Nama Penyedia Jasa>
+  [Edit Profile Toko / Profil Jasa]
+
+- Menu Akun Saya:
+  [Ganti Mode ke Pembeli/User] -> <Redirect ke Landing Page Role User>
+  [Atur Rekening Bank] -> <Menyimpan data bank untuk penarikan dana>
+  [Ulasan & Rating Saya] -> <Melihat feedback bintang dari para pelanggan>
+  [Syarat Ketentuan Seller]
+  [KELUAR / LOGOUT]

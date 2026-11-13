@@ -1,0 +1,123 @@
+Lambang yang di gunakan
+<> = pesan bagi developer
+[] = action/button/collumn
+
+Role User 
+
+1. Login page 
+- Login
+- sign-in
+
+2. Landing page
+- nav bar 
+  	Selamat datang		(Photo profil)
+  	Halo <Nama user>  
+      
+- search bar
+
+- Katalog Jasa (berisi katalog jasa yang mahasiswa tawarkan)
+	card (nama jasa, deskripsi jasa, nama penyedia jasa)
+
+	Buttom Navigation bar
+	[HOME | KATEGORI PESANAN | PEMBAYARAN | CHAT | AKUN]
+
+3. Halaman detail jasa
+- Detail Product (terbuka saat jasa di klik)
+	Nama jasa : <nama jasa yang ditawarkan>
+	Oleh : <nama mahasiswa penyedia jasa>
+	Portofolio:
+		<brisikan portofolio penyedia jasa bisa berupa PDF atau link website>
+	Detail Jasa:
+		<Deskripsi jasa yang di tawarkan>
+	
+	chat dengan <nama penyedia jasa>:
+		[Chat dengan penyedia jasa]
+	
+	Pesan jasa:
+	<Deskripsi kebutuhan misal jasa membuat website.>
+	
+	Estimasi dateline:
+		[Pilih tanggal] 
+	
+	Lampiran (Opsional)
+		<lampiran tugas atau detail tugas atau material yang di butuhkan penyedia jasa>
+	
+	[SELESAIKAN PESANAN]
+	
+- Halaman Ringkasan Pesanan
+	[berisi detail atau summary pesanan yang sudah di buat
+		Pesan jasa:
+		Estimasi dateline:
+		Lampiran (Opsional)]
+		
+	[EDIT PESANAN]				[PESAN]
+
+jika pesanan di terima maka pembayaran akan di kirim ke halaman Pembayaran
+
+4. Halaman Pembayaran
+	List Pembayaran
+
+	Detail Pembayaran <ID PESANAN>
+		[QRIS]
+		
+	Kirim bukti pembayaran:
+		[png, jpg]
+
+		[SELESAI]
+
+Jika sudah klik tombol [SELESAI] akan redirect ke halaman  pesanan masuk ke halaman pesanan:
+list pesanan:
+<berisi list pesanan yang di pesan USER>
+
+- Halaman detail pesanan
+	Order ID				Total Pesanan : <harga pesanan yang di acc>
+
+	Halaman pesanan:
+	<pesanan sedang di kerjakan>
+	status bar:
+		-----o----------------o-----------qq---------o------------------o----
+		Di tinjau	pesanan di kerjakan	   Pesanan Selesai		
+		
+	jika USER ingin mengajukan revisi ada maka penyedia jasa bisa update status jadi revisi.
+	
+		-----o----------------o--------------------o------------------o-------
+		di tinjau	pesanan di kerjakan	   Pesanan Selesai		Revisi pesanan
+		
+	[chat denngan <nama penyedia jasa>]
+	
+	Hasil pesanan:
+	<brisi hasil pesanan yang telah di selesaikan >
+						[hasil pesanan]
+	
+		[selesaikan pesanan] 			[ajukan revisi]
+
+	Beri Ulasan <hanya bisa membeerikan ULASAN jika status pesan atau revisi selesai.> 
+	[beri kan bintang]
+	[komen kinerja]
+	
+jika USER memilih ajukan revisi maka akan redirect ke halaman chat dengan penyedia jasa. USER bisa menjelaskan apa yang ingin di revisikan.
+	
+jika pesanan telah selesai. 
+	
+4. Halaman chat dengan penyedia jasa
+	[Search bar]
+	chat box dengan penyedia jasa
+	[(Photo profile) <nama penyedia jasa>]
+	[pesan:								 ]
+	
+5. Halaman AKUN USER
+	(PHOTO PROFIL) <Nama USER>
+		 [edit profile]
+		 
+	Akun Saya:
+	[ganti akun]
+	[Favirit]
+	[Riwayat pesanan]
+	[Riwayat Pembayaran]
+
+	[Pusat Bantuan]
+		redirect ke halaman khusus portal bantuan brisi informasi cara penggunaan aplikasi.
+	[Kebijakan & privasi]
+		redirect ke halaman khusus portal Kebijakan & privasi brisi informasi kebjikan dan privasi pengguna.
+	
+	[Keluar] <Logout>
