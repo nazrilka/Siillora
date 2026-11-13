@@ -45,7 +45,7 @@ All product specifications, functional requirements, and wireframe structures ar
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Siillora.git
+   git clone https://github.com/nazrilka/Siillora.git
    cd Siillora
    ```
 
